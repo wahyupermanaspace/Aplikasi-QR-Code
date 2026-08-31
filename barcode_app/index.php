@@ -191,8 +191,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'print' && isset($_GET['code'])
     <?php } else { ?>
     <!-- --- TAMPILAN FORM TAMBAH --- -->
         <form method="POST" action="index.php">
-            <input type="text" name="name" required placeholder="Judul (Contoh: Website Saya)">
-            <input type="text" name="code" required placeholder="Data QR (Contoh: https://google.com)">
+            <input type="text" name="name" required placeholder="Nama Barang">
+            <input type="text" name="code" required placeholder="Data / Link (Contoh: https://google.com)">
             <button type="submit" name="add">➕ Tambah Data</button>
         </form>
     <?php } ?>
@@ -228,8 +228,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'print' && isset($_GET['code'])
         <thead>
             <tr>
                 <th>No</th>
-                <th>Nama / Judul</th>
-                <th>Isi Data QR</th>
+                <th>Nama Barang</th>
+                <th>Data QR</th>
                 <th>Preview QR</th>
                 <th>Aksi</th>
             </tr>
